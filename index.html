@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patua+One&family=Ubuntu+Mono:wght@700&family=Varela+Round&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="prediction-article">
+            <p class="article-text">Prediction Generator</p>
+
+        </div>
+        <div class="prediction-block">
+                <p class="input-text">write your name:</p>
+                <input type="text" class="input-area" id="input_text"> 
+                <input type="button" class="click" onclick="fun1()" value="Check Prediction">
+        </div>
+    </div>
+    <script>
+        function fun1(){
+            let name = document.getElementById("input_text").value;
+            if( name.length < 1 ){
+                alert("Введіть ім'я")
+            }
+            else{
+            let arrWhen = ["Cьогодні","Завтра","У новому році","За тиждень","Наступного тижня","Скоро","Через декілька хвилин","Через рік"];
+            let arrWhat = ["Cтупор","Чудо","Гарна новина","Море бабла","Нові знання","погана новина","Здивування","розчарування","Емоції які ти не переживав","продуктивий день"]
+            let arrAnyThing = ["Гарного дня!","Удачі!","Будь готовий до всього!","Твори!","Все залежить від тебе!"]
+
+            let random1 = arrWhen[Math.floor(Math.random() * arrWhen.length)];
+            let random2 = arrWhat[Math.floor(Math.random() * arrWhat.length)];
+            let random3 = arrAnyThing[Math.floor(Math.random() * arrAnyThing.length)];
+
+            let prediction = "Привіт " + name + " ! " + random1 + " тебе чекає " + random2 + " . " + random3;
+            alert(prediction)
+            }
+}
+    </script>
+</body>
+</html>

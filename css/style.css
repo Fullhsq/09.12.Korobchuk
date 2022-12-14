@@ -1,0 +1,58 @@
+body{
+    background: url(../img/fon.jpg);
+}
+.prediction-article{
+    width: 700px;
+    height: 150px;
+    border-radius: 15px;
+    background: rgb(255,255,255);
+background: radial-gradient(circle, rgba(255,255,255,1) 55%, rgba(71,74,71,0) 100%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    left: 30%;
+    top: 5%;
+}
+.article-text{
+    font-family: 'Patua One', cursive;
+    font-size: 50px;
+    color: rgb(119, 119, 119);
+}
+.prediction-block{
+    width: 700px;
+    height: 300px;
+    background: rgb(119, 119, 119);
+    border-radius: 15px;
+    position: absolute;
+    left: 30%;
+    top: 30%;
+}
+.input-text{
+    color: aliceblue;
+    font-size: 50px;
+    font-family: 'Patua One', cursive;
+    margin-left: 40px;
+    float: left;
+}
+.input-area{
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+    margin-left: 50px;
+    margin-top: -150px;
+    font-size: 40px;
+    color: rgb(78, 71, 63);
+    font-family: 'Patua One', cursive;
+}
+.click{
+    font-family: 'Patua One', cursive;
+    font-size: 40px;
+    border: 1px solid rgb(51, 51, 51);
+    border-radius: 10px;
+    background: rgb(109, 109, 109);
+    position: relative;
+    color: white;
+    top: 50px;
+}
